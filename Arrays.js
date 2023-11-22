@@ -19,6 +19,15 @@ document.writeln("Array elements are : ",kohli,"<br>");
 
 /*creating the new array with size declaration*/
 var initilaizing=new Array(10);
-document.writeln(initilaizing);
+document.writeln(initilaizing+"<br>");
+
+var a=new Array(12,23,34,56,67)
+delete a[1]
+document.writeln("After deleting the array elements in index a[1] : ",a[1],"<br>")
+document.writeln("After deleting the element in array 'a' : ",a,"<br>");
+
+var emp={"name":"rithu","gender":"Male","emp_id":123}
+document.writeln(emp.name," ",emp.emp_id," ",emp.gender)
+
 
 
