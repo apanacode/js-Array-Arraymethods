@@ -52,6 +52,63 @@ Checking whether it is array or not:
   {
   document.writeln(strike_rate[i])
   }
+
+ARRAY METHODS:
+
+* JAVASCRIPT ARRAY LENGTH : This array length() method is used to return the length of array.
+  syntax : array_name.length();
+  for example:
+  var fruits=["apple","lemon","grapes"]
+  document.writeln(fruits.length())
+  output : 3
+* JOIN METHOD : This join() method is used to joins all array elements into a string.It behaves just like toString(),but in additional you can specify the separator.
+  syntax : array_name.join("delimit")
+  var attach=[12,23,4,56,77]
+  document.writeln(attach.join("+"))
+  output : 12+23+4+56+77
+* SORTING : This method is used sort the array elements into ascending order only for the strings(alphabetics).
+  syntax : array_name.sort();
+  for example : var months=new Array("june","may","jan");
+  document.writeln(months.sort())
+  output : jan,june,may
+* POPPING AND PUSHING :
+  When you work with arrays,  it is easy to remove elements and add new elements.This is what popping and pushing is:
+  Popping items out of an array, or pushing items into an array.
+  pop() method : The pop() method removes the last element from an array.It is used to return the popped out element.
+  syntax : array_name.pop();
+  for example : var fruits=["banana","grapes","mango"]
+  document.writeln(fruits.pop())
+  output : mango
+  push() method : The push() method is used to add the elements into the array at the last index.It is used to return the length of the new array.
+  syntax : array_name.push();
+  for example : var fruits=["banana","grapes","mango"]
+  document.writeln(fruits.push("lemon","orange"))
+  output : 5
+  * SHIFTING ELEMENTS :
+    Shifting is equivalent to popping, but working on the first element instead of the last.
+    Array shift() method : The shift() method removes the first array element and "shifts" all other elements to a lower index. The shift() method returns the value that was "shifted out".
+    syntax : array_name.shift();
+   for example :var fruits = ["Banana", "Orange", "Apple", "Mango"];
+   document.writeln(fruits.shift());
+    output : banana
+    Array unshift() method : The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.The unshift() method returns the new array length.
+      syntax : array_name.unshift();
+   for example :var fruits = ["Banana", "Orange", "Apple", "Mango"];
+   document.writeln(fruits.shift("lemon"));
+    output : 5
+  * MERGING (CONCATENATING) ARRAYS :
+    The concat() method creates a new array by merging (concatenating) existing arrays.
+    The concat() method can take any number of array arguments
+    syntax :new_array=array1.concat(array2);
+    for example : var classA_names=["rithu","iran","malla","viran"];
+                  var classB_names=["seshu","aveent","sohu"];
+                  var names=classA_names.concat(classB_names);
+  * SPLICING AND SLICING ARRAYS :
+    The splice() method adds new items to an array.
+    The slice() method slices out a piece of an array.
+    
+  
+    
   
   
   
